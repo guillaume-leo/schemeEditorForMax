@@ -8,6 +8,6 @@ I created this editor with the [codemirror](https://codemirror.net/) library. Yo
 
 [Here](https://guillaume-leo.github.io/schemeEditorForMax/) is a demo but you need Max/Msp and the S4M external to use it completely.
 
-Here is the documentation on Scheme For Max:[S4M](https://iainctduncan.github.io/scheme-for-max-docs/)
+[Documentation](https://iainctduncan.github.io/scheme-for-max-docs/) of Scheme For Max.
 
 
