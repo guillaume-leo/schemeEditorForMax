@@ -5,7 +5,7 @@ I created this editor with the [codemirror](https://codemirror.net/) library. Yo
 [live-demo](https://guillaume-leo.github.io/schemeEditor/)
 
 ### TODO:
-  - [] send the evaluated code to something... 
+  -[] send the evaluated code to something... 
   
 ### More info on scheme :
   [scheme.com](https://www.scheme.com/tspl4/)
