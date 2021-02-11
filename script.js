@@ -9,12 +9,15 @@ var cm = new CodeMirror.fromTextArea(document.getElementById("editor"), {
   autoCloseBrackets: true,
   matchBrackets:true,
   styleActiveLine: {nonEmpty: true},
+  onChange: function (cm) {
+    window.max.outlet.apply(window.max, ["toSave"].concat(cm.getValue()));
+},
   styleActiveSelected: true,
   extraKeys: {
     "Esc": function(cm) {
       cm.setOption("fullScreen", !cm.getOption("fullScreen"));
     },
-    "Ctrl-Enter": () => { 
+    "Alt-Enter": () => {
       var cur = cm.getCursor().line;
       var arr = cm.getValue().split("\n");
       var txt = '', start = 0, stop = 0;
@@ -31,7 +34,7 @@ var cm = new CodeMirror.fromTextArea(document.getElementById("editor"), {
           }
       }
       getBlock(cur, arr);
-      window.max.outlet.apply(window.max, ["eval"].concat(txt)) //! send the content of txt to the outlet of JWEB 
+      window.max.outlet.apply(window.max, ["toMax"].concat(txt)) //! send the content of txt to the outlet of JWEB
     }
   }
 });
@@ -64,11 +67,32 @@ function getBlock(pos , arr){
 
 const timer = ms => new Promise(res => setTimeout(res, ms))
 
-async function blink (n) { 
+async function blink (n) {
   for (var i = 0; i < 2; i++) {
     if (i==0){cm.addLineClass(n, 'wrap', 'eval');}else{cm.removeLineClass(n, 'wrap', 'eval');}
-    await timer(500); 
+    await timer(500);
   }
 }
 
 
+
+
+
+
+
+   (function() {
+     window.max.bindInlet("textIn", setValue);
+     window.max.bindInlet("textOut", getValue);
+
+     initialize();
+
+
+
+function setValue(txt){
+  cm.setValue(txt);
+}
+function getValue(){
+    window.max.outlet.apply(window.max, ["toSave"].concat(cm.getValue()));
+}
+
+   })();

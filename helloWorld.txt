@@ -1,0 +1,6 @@
+code, ";Press Alt-Enter to evaluate some code :)
+
+(begin
+    (post \"Hello, World!\"))
+
+";
