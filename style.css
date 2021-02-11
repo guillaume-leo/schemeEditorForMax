@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+}
+
+
+.eval{
+    background-color: rgba(0,255,0,1);
+    animation-name: fadeOut;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeOut{
+0%      {background-color: rgba(0,255,0,1);}
+100%    {background-color: rgba(0,255,0,0.0);}
+}
