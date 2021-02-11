@@ -31,6 +31,7 @@ var cm = new CodeMirror.fromTextArea(document.getElementById("editor"), {
           }
       }
       getBlock(cur, arr);
+      window.max.outlet.apply(window.max, ["eval"].concat(txt)) //! send the content of txt to the outlet of JWEB 
     }
   }
 });
@@ -69,8 +70,5 @@ async function blink (n) {
     await timer(500); 
   }
 }
-
-
-
 
 
