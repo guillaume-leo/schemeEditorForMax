@@ -61,9 +61,9 @@
 					"outlettype" : [ "", "", "int" ],
 					"outputmode" : 0,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 596.0, 175.0, 100.0, 20.0 ],
+					"patching_rect" : [ 832.0, 125.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 561.0, 41.0, 44.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 8.0, 100.0, 20.0 ],
 					"style" : "guiqDark1",
 					"text" : "open",
 					"texton" : "open",
@@ -183,9 +183,9 @@
 					"outlettype" : [ "", "", "int" ],
 					"outputmode" : 0,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 596.0, 153.0, 100.0, 20.0 ],
+					"patching_rect" : [ 832.0, 103.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 561.0, 0.0, 44.0, 20.0 ],
+					"presentation_rect" : [ 106.0, 8.0, 100.0, 20.0 ],
 					"style" : "guiqDark1",
 					"text" : "save",
 					"texton" : "save",
@@ -277,9 +277,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 84.0, 145.0, 683.0, 651.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 683.0, 651.0 ],
-					"rendermode" : 0,
-					"url" : "C:/Users/guill/Desktop/max/schemeEditor-main/index.html"
+					"presentation_rect" : [ 0.0, 36.0, 683.0, 651.0 ],
+					"rendermode" : 1,
+					"url" : "C:/Users/guill/Desktop/max/S4M/schemeEditorForMax/index.html"
 				}
 
 			}
@@ -449,32 +449,25 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "helloWorld.txt",
-				"bootpath" : "~/Desktop/max/schemeEditor-main",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "guiqDark1",
 				"default" : 				{
+					"stripecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"patchlinecolor" : [ 0.619607843137255, 0.007843137254902, 0.831372549019608, 1.0 ],
 					"color" : [ 0.070588235294118, 0.686274509803922, 0.564705882352941, 1.0 ],
+					"fontsize" : [ 10.0 ],
+					"accentcolor" : [ 0.0, 0.003921568627451, 0.352941176470588, 1.0 ],
 					"fontname" : [ "Ableton Sans Medium" ],
 					"elementcolor" : [ 0.235294117647059, 0.482352941176471, 0.572549019607843, 1.0 ],
 					"editing_bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textjustification" : [ 0 ],
 					"fontface" : [ 1 ],
 					"textcolor_inverse" : [ 0.76078431372549, 0.709803921568627, 0.709803921568627, 1.0 ],
-					"textcolor" : [ 0.556862745098039, 0.513725490196078, 0.125490196078431, 1.0 ],
-					"textjustification" : [ 0 ],
-					"clearcolor" : [ 0.0, 0.149019607843137, 0.647058823529412, 0.46 ],
 					"locked_bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 10.0 ],
-					"stripecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.0, 0.003921568627451, 0.352941176470588, 1.0 ],
-					"patchlinecolor" : [ 0.619607843137255, 0.007843137254902, 0.831372549019608, 1.0 ]
+					"textcolor" : [ 0.556862745098039, 0.513725490196078, 0.125490196078431, 1.0 ],
+					"clearcolor" : [ 0.0, 0.149019607843137, 0.647058823529412, 0.46 ]
 				}
 ,
 				"parentstyle" : "",

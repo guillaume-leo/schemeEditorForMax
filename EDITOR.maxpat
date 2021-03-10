@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 1449.0, 913.0 ],
+		"rect" : [ 42.0, 85.0, 1452.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -40,12 +40,60 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 91.0, 139.0, 39.0, 20.0 ],
+					"text" : "live.ist"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 896.0, 192.0, 150.0, 18.0 ],
+					"text" : "your mum sucks cock 1 2 3",
+					"varname" : "myc"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 62.0, 728.0, 29.5, 20.0 ],
+					"text" : "scan"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 891.0, 304.0, 50.0, 20.0 ],
+					"varname" : "mynum"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 602.0, 27.0, 20.0 ],
+					"patching_rect" : [ 0.0, 722.0, 27.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"ins" : 1,
 						"log-null" : 0,
@@ -85,19 +133,19 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "editor_sub.maxpat",
-				"bootpath" : "~/Desktop/max/schemeEditor-main",
+				"bootpath" : "~/Desktop/max/S4M/schemeEditorForMax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "helloWorld.txt",
-				"bootpath" : "~/Desktop/max/schemeEditor-main",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -109,20 +157,20 @@
 		"styles" : [ 			{
 				"name" : "guiqDark1",
 				"default" : 				{
-					"elementcolor" : [ 0.235294117647059, 0.482352941176471, 0.572549019607843, 1.0 ],
-					"locked_bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"color" : [ 0.070588235294118, 0.686274509803922, 0.564705882352941, 1.0 ],
-					"fontface" : [ 1 ],
-					"editing_bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"stripecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.76078431372549, 0.709803921568627, 0.709803921568627, 1.0 ],
 					"patchlinecolor" : [ 0.619607843137255, 0.007843137254902, 0.831372549019608, 1.0 ],
-					"clearcolor" : [ 0.0, 0.149019607843137, 0.647058823529412, 0.46 ],
+					"color" : [ 0.070588235294118, 0.686274509803922, 0.564705882352941, 1.0 ],
 					"fontsize" : [ 10.0 ],
-					"textcolor" : [ 0.556862745098039, 0.513725490196078, 0.125490196078431, 1.0 ],
 					"accentcolor" : [ 0.0, 0.003921568627451, 0.352941176470588, 1.0 ],
 					"fontname" : [ "Ableton Sans Medium" ],
-					"textjustification" : [ 0 ]
+					"elementcolor" : [ 0.235294117647059, 0.482352941176471, 0.572549019607843, 1.0 ],
+					"editing_bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textjustification" : [ 0 ],
+					"fontface" : [ 1 ],
+					"textcolor_inverse" : [ 0.76078431372549, 0.709803921568627, 0.709803921568627, 1.0 ],
+					"locked_bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor" : [ 0.556862745098039, 0.513725490196078, 0.125490196078431, 1.0 ],
+					"clearcolor" : [ 0.0, 0.149019607843137, 0.647058823529412, 0.46 ]
 				}
 ,
 				"parentstyle" : "",
