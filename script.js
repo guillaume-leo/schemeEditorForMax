@@ -106,19 +106,19 @@ async function blink (n) {
 
 
 
-//    (function() {
-//      window.max.bindInlet("textIn", setValue);
-//      window.max.bindInlet("textOut", getValue);
-//
-//      initialize();
-//
-//
-//
-// function setValue(txt){
-//   cm.setValue(txt);
-// }
-// function getValue(){
-//     window.max.outlet.apply(window.max, ["toSave"].concat(cm.getValue()));
-// }
-//
-   // })();
+   (function() {
+     window.max.bindInlet("textIn", setValue);
+     window.max.bindInlet("textOut", getValue);
+
+     initialize();
+
+
+
+function setValue(txt){
+  cm.setValue(txt);
+}
+function getValue(){
+    window.max.outlet.apply(window.max, ["toSave"].concat(cm.getValue()));
+}
+
+   })();
