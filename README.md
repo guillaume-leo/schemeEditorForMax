@@ -4,10 +4,10 @@
 
 ​	In 2019, [Iain Duncan](https://github.com/iainctduncan) released a Max external "S4M" which allow you to do some Scheme programming in the Max environment. 
 
-I created this editor with the [codemirror](https://codemirror.net/) library. You can eval the block of code around the cursor by pressing Ctrl+Enter. 
+I created this editor with the [codemirror](https://codemirror.net/) library. You can eval the block of code around the cursor by pressing Alt+Enter. 
 
-Here is the documentation on scheme ForMax:
+[Here](https://guillaume-leo.github.io/schemeEditorForMax/) is a demo but you need Max/Msp and the S4M external to use it completely.
 
-  [S4M](https://iainctduncan.github.io/scheme-for-max-docs/)
+[Documentation](https://iainctduncan.github.io/scheme-for-max-docs/) of Scheme For Max.
 
 
