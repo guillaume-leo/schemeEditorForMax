@@ -51,18 +51,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 896.0, 192.0, 150.0, 18.0 ],
-					"text" : "your mum sucks cock 1 2 3",
-					"varname" : "myc"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -70,19 +58,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 62.0, 728.0, 29.5, 20.0 ],
 					"text" : "scan"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 891.0, 304.0, 50.0, 20.0 ],
-					"varname" : "mynum"
 				}
 
 			}
