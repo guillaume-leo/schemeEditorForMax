@@ -14,9 +14,6 @@ var cm = new CodeMirror.fromTextArea(document.getElementById("editor"), {
 },
   styleActiveSelected: true,
   extraKeys: {
-    "Esc": function(cm) {
-      cm.setOption("fullScreen", !cm.getOption("fullScreen"));
-    },
     "Alt-Enter": () => {
 
       var cur = cm.getCursor().line + 1;
@@ -89,6 +86,8 @@ parinferCodeMirror.init(cm, 'smart');
 // set the size of the editor
 cm.setSize(600, 600);
 
+
+cm.setOption("fullScreen", !cm.getOption("fullScreen"));
 
 
 const timer = ms => new Promise(res => setTimeout(res, ms))
